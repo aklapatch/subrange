@@ -53,9 +53,20 @@ int main(){
 	}
 	std::cout << "\n";
 
+	// use other constructor
+	test = subrange(19,26);
+	out = test.getRange();
+
+	// test results of other constructor
+	std::cout << "Testing 2 parameter constructor: ";
+	for(int i = 0; i < out.size(); ++i){
+		std::cout << out[i] << "\t";
+	}
+	std::cout << "\n";
+
 	// test static get method
 	out = subrange::get(34, 42);
-	std::cout << "static get operation: ";
+	std::cout << "Static get operation: ";
 	for(int i = 0; i < out.size(); ++i){
 		std::cout << out[i]<< "\t";
 	}
